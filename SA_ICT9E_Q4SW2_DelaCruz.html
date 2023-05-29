@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Q4 SW2</title>
+	<style type="text/css">
+				body{
+				font-family: 'Alkatra', cursive;
+				margin: 10 px;
+				}
+	</style>
+</head>
+<body class="container-fluid">
+	<nav class="nabar fixed-top navbar-expand navbar-dark bg-danger">
+        <a href="" class="navbar-brand text-light"><b>Temperature</b></a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="SA_ICT9E_Q4SW2_DelaCruz.html" class="nav-link text-warning">Conversion</a></li>
+            <li class="nav-item"><a href="fc.html" class="nav-link text-warning">ºF to ºC</a></li>
+            <li class="nav-item"><a href="cf.html" class="nav-link text-warning">ºC to ºF</a></li>
+        </ul>
+    </nav>		
+    <br>
+    <p class="p-3 mb-2 text-white">These are the contestants:</p>
+				<table class="table table-bordered">
+					<thead class="bg-warning">
+						<tr class="text-danger">
+							<th scope="col">Celsius (ºC)</th>
+							<th scope="col">Fahrenheit (ºF)</th>
+							<th scope="col">Description</th>
+						</tr>
+					</thead>
+					<tbody class="bg-danger text-warning">
+						<tr>
+							<td>-273.15</td>
+							<td>-459.67</td>
+							<td>Absolute zero temperature</td>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>32.0</td>
+							<td>Freezing/melting point of water</td>
+						</tr>
+						<tr>
+							<td>21.0</td>
+							<td>69.8</td>
+							<td>Room Temperature</td>
+						</tr>
+						<tr>
+							<td>37.0</td>
+							<td>98.6</td>
+							<td>Average body temperature</td>
+							</tr>
+						<tr>
+							<td>100.0</td>
+							<td>212.0</td>
+							<td>Boiling point of water</td>
+						</tr>
+					</tbody>
+				</table>
+	<p id="date" class="bg-warning text-danger"></p>
+	<script>
+	const d = new Date();
+	document.getElementById("date").innerHTML = d;
+	</script>
+</body>
+</html>
